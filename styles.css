@@ -1,0 +1,314 @@
+body {
+  background-color: #FAFAFA;
+  padding: 0;
+  margin: 0;
+}
+
+.search-bar input[type=search] {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.search-bar input[type=search]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BABABA;
+  font-size: 11px;
+  font-style: italic;
+  padding-left: 8px;
+}
+.search-bar input[type=search]::-moz-placeholder { /* Firefox 19+ */
+  color: #BABABA;
+  font-size: 11px;
+  font-style: italic;
+  padding-left: 8px;
+}
+.search-bar input[type=search]:-ms-input-placeholder { /* IE 10+ */
+  color: #BABABA;
+  font-size: 11px;
+  font-style: italic;
+  padding-left: 8px;
+}
+.search-bar input[type=search]:-moz-placeholder { /* Firefox 18- */
+  color: #BABABA;
+  font-size: 11px;
+  font-style: italic;
+  padding-left: 8px;
+}
+
+.search-bar {
+  display: flex;
+  margin: 50px auto 50px auto;
+}
+
+header {
+   width: 100%;
+   background-image:url("images/img_banner.jpg");
+   height: 300px;
+   background-repeat: no-repeat;
+   background-size: calc(100% - 120px);
+   display: flex;
+   flex-direction: column;
+   background-color: #000;
+   background-position: center;
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  padding: 16px 86px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+  font-size: 14px;
+}
+
+.topnav a.active .nav-menu {
+  border-bottom: 1px solid #9442EE;
+  padding-bottom: 6px;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-blue {
+  color: #9442EE;
+}
+
+.color-green {
+  color: #00BA00;
+}
+
+.heart {
+  fill: #9442EE;
+  top: 5px;
+  width: 20px;
+  animation: pulse 1s ease infinite;
+  height: 18px;
+  margin-right: 20px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.banner-info {
+  display: flex;
+  margin: 25px auto -15px auto;
+  font-size: 32px;
+}
+
+.fitness-menu {
+  display: flex;
+  flex-direction: row;
+  margin: -50px 60px 0 60px;
+  width: calc(100% - 120px);
+}
+
+.fitness-options {
+  height: 100px;
+  border: 1px solid #DADADA;
+  width: 25%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 2px 2px #F2F2F2;
+}
+
+.fit-img {
+  height: 60px;
+}
+
+.btlr-10 {
+  border-top-left-radius: 10px;
+}
+
+.btrr-10 {
+  border-top-right-radius: 10px;
+}
+
+.bblr-10 {
+  border-bottom-left-radius: 10px;
+}
+
+.bbrr-10 {
+  border-bottom-right-radius: 10px;
+}
+
+.selected-fitness-option, .fitness-options:hover {
+  width: 30%;
+  height: 140px;
+  margin-top: -20px;
+  border-bottom: 2px solid #9442EE;
+}
+
+.excercise_img {
+  height: 140px;
+  width: 140px;
+  margin-top: -35px;
+}
+
+.excercise-menu {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 30px 70px 60px;
+  width: calc(100% - 120px);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.excercise-option {
+  flex-basis: 45%;
+  border: 1px solid #EAEAEA;
+  box-shadow: 2px 2px #F2F2F2;
+  padding: 10px 10px;
+  width: 45%;
+  margin-bottom: 40px;
+  background-color: #FFF;
+}
+
+.e-i-head {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.e-i-author {
+  font-size: 11px;
+  font-weight: lighter;
+  color: #888;
+}
+
+.excercise-details {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.excercise-info {
+  margin: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.excercise-info p, .text-small-light {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.star {
+  display: inline-block;
+  position: relative;
+  margin-left: 6px;
+  font-size: 15px;
+  color: #e2e2e2;
+}
+
+.stars .selected {
+  color: #ffe11b;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.card-footer {
+  justify-content: space-between;
+}
+
+.avatar {
+  display:inline-block;
+  font-size:1em;
+  width:2.5em;
+  height:2.5em;
+  line-height:2.5em;
+  text-align:center;
+  border-radius:50%;
+  background:#9442EE;
+  vertical-align:middle;
+  margin-right:-1em;
+  color:white;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.more-avatar {
+  background: white;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.more-avatar span{
+  font-size: 10px;
+}
+
+.schedule-button {
+  height: 28px;
+  width: 100px;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #9442EE;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6442BB;
+}
+
+.search-btn {
+  height: 30px;
+  width: 105px;
+  margin-left: 10px;
+}
+
+.text-small-bold {
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .excercise-option {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
